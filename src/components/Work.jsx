@@ -1,5 +1,6 @@
 import React from 'react'
 import WorkItem from './WorkItem'
+import Resume from '../assets/ATM_Resume.pdf'
 
 const data = [
     {
@@ -39,6 +40,11 @@ const Work = () => {
             details={item.details} 
             />
         ))}
+        <div className='flex flex-col mb-5 pb-5 justify-center items-center'>
+            <a href={Resume} download>
+                <button className='bg-[#001b5e] justify-center items-center text-gray-100 mt-10 p-4 rounded-lg'>Download Resume</button>
+            </a>
+        </div>
     </div>
   )
 }

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { AiOutlineMenu, AiOutlineHome, AiOutlineProject, AiOutlineMail } from 'react-icons/ai'
 import { BsPerson } from 'react-icons/bs'
+import { FiX } from 'react-icons/fi'
 import { GrProjects } from 'react-icons/gr'
 
 const Sidenav = () => {
@@ -11,7 +12,11 @@ const Sidenav = () => {
 
   return (
     <div>
-        <AiOutlineMenu onClick={handleNav} className='absolute top-4 right-4 z-[99] md:hidden' />
+        {nav ? (
+            <FiX size={40} onClick={handleNav} className='fixed top-4 right-4 z-[99] md:hidden rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-2 cursor-pointer' />
+        ) : (
+            <AiOutlineMenu size={40} onClick={handleNav} className='fixed top-4 right-4 z-[99] md:hidden rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-2 cursor-pointer' />
+        )}   
         {
             nav ? (
                 <div className='fixed w-full h-screen bg-white/90 flex flex-col justify-center items-center z-20'>

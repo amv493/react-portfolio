@@ -26,11 +26,9 @@ const Main = () => {
                         style={{ fontSize: '1em', fontStyle: 'italic', paddingLeft: '5px' }}
                     />
                 </h2>
-                <div className='flex justify-between pt-6 max-w-[200px] w-full'>
-                    <FaFacebookF className='cursor-pointer' size={20} />
-                    <FaInstagram className='cursor-pointer' size={20} />
-                    <a href="https://www.linkedin.com/in/anthony-tymckinney/" target='_blank'><FaLinkedinIn className='cursor-pointer' size={20} /></a>
-                    <a href="https://github.com/amv493" target='blank'><FaGithub className='cursor-pointer' size={20} /></a>
+                <div className='flex justify-center pt-6 max-w-[200px] w-full'>
+                    <a href="https://www.linkedin.com/in/anthony-tymckinney/" target='_blank'><FaLinkedinIn className='w-[50px] flex justify-center items-center rounded-full shadow-lg bg-black shadow-gray-400 cursor-pointer hover:scale-110 ease-in duration-200 cursor-pointer mr-5 p-2' color='white' size={40} /></a>
+                    <a href="https://github.com/amv493" target='blank'><FaGithub className='w-[50px] flex justify-center items-center rounded-full shadow-lg bg-black shadow-gray-400 cursor-pointer hover:scale-110 ease-in duration-200 cursor-pointer mr-5 p-2' color='white' size={40} /></a>
                 </div>
             </div>
 
